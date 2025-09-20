@@ -9,7 +9,7 @@ type ResponseProps = ComponentProps<typeof Streamdown>;
 export const Response = memo(
   ({ className, ...props }: ResponseProps) => (
     <Streamdown
-      className={cn('size-full [&>*:first-child]:mt-0 [&>*:last-child]:mb-0 [&_a]:!text-current', className)}
+      className={cn('streamdown size-full [&>*:first-child]:mt-0 [&>*:last-child]:mb-0 [&_a]:!text-current', className)}
       {...props}
     />
   ),

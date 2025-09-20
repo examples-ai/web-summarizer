@@ -93,3 +93,15 @@ body {
     @apply bg-background text-foreground text-2xl;
   }
 }
+
+@layer components {
+  .streamdown ul {
+    @apply list-disc pl-6;
+  }
+  .streamdown ol {
+    @apply list-decimal pl-6;
+  }
+  .streamdown li {
+    @apply mb-1;
+  }
+}
