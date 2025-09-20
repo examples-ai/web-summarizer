@@ -1,6 +1,6 @@
 'use client';
 
-import { Globe, SearchIcon } from 'lucide-react';
+import { Globe, SearchIcon, Github } from 'lucide-react';
 import { useState, useTransition } from 'react';
 import {
   Conversation,
@@ -64,6 +64,17 @@ const ChatBotDemo = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 relative size-full h-screen">
       <div className="flex flex-col h-full">
+        <div className="flex justify-start mb-4">
+          <a
+            href="https://github.com/examples-ai/web-summarizer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg border border-border bg-black text-white hover:bg-gray-800 transition-colors"
+            title="View on GitHub"
+          >
+            <Github className="size-5" />
+          </a>
+        </div>
         <Conversation className="h-full">
           <ConversationContent>
             {messages.map((message) => (
