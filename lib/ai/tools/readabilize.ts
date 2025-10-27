@@ -47,7 +47,7 @@ function create() {
       } catch (error) {
         console.error('Error in summarizer tool:', error);
         return {
-          content: error instanceof Error ? error.message : 'An unknown error occurred.',
+          content: error instanceof Error ? error.toString() : 'An unknown error occurred.',
         };
       } finally {
         await browser.browser?.close();
