@@ -1,5 +1,5 @@
 {
-  "name": "web-summarizer-examples-ai",
+  "name": "@examples-ai/web-summarizer",
   "version": "0.1.0",
   "private": true,
   "type": "module",
